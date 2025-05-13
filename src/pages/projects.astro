@@ -3,49 +3,56 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 ---
 
-<BaseLayout title = "Projects" sideBarActiveItemID="projects">
+<BaseLayout title="Projects" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
+    <div class="text-4xl w-full font-bold mb-8">Featured Projects</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
+    title="📘 Educational Game Project Management"
+    img="/project1.webp"
+    desc="Led a turnaround of a struggling educational 2D platformer game project by implementing structured feedback loops and transparent communication channels. Achieved 40% improvement in client satisfaction through strategic project management."
+    url="/projects/educational-game"
+    badge="Project Management"
+  >
+    <div class="flex flex-wrap gap-2 mt-2">
+      <span class="badge badge-outline text-lg py-3">Agile</span>
+      <span class="badge badge-outline text-lg py-3">Client Communication</span>
+      <span class="badge badge-outline text-lg py-3">Team Leadership</span>
+    </div>
+  </HorizontalCard>
 
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Projects Header</div>
-  </div>
+  <div class="divider my-4"></div>
 
   <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
-  />
-  <div class="divider my-0"></div>
+    title="🌍 Intern Engagement Leadership at Emera"
+    img="/project2.webp"
+    desc="Led co-op student committee initiatives including a successful fundraising campaign ($1,200 raised) and volunteer events. Represented company at university hiring fairs, driving a 60% increase in intern participation and engaging 20+ potential candidates."
+    url="/projects/intern-engagement"
+    badge="Leadership"
+  >
+    <div class="flex flex-wrap gap-2 mt-2">
+      <span class="badge badge-outline text-lg py-3">Event Management</span>
+      <span class="badge badge-outline text-lg py-3">Community Building</span>
+      <span class="badge badge-outline text-lg py-3">Brand Representation</span>
+    </div>
+  </HorizontalCard>
+
+  <div class="divider my-4"></div>
+
   <HorizontalCard
-    title="Demo Project 4"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 5"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
+    title="🎥 Brand Repositioning Campaign"
+    img="/project3.webp"
+    desc="Collaborated with external agency on company rebranding campaign, serving as key liaison between stakeholders. Campaign achieved 50,000+ views and 35% increase in brand recall through strategic storytelling and cross-functional coordination."
+    url="/projects/brand-campaign"
+    badge="Marketing"
+  >
+    <div class="flex flex-wrap gap-2 mt-2">
+      <span class="badge badge-outline text-lg py-3">Brand Strategy</span>
+      <span class="badge badge-outline text-lg py-3">Stakeholder Management</span>
+      <span class="badge badge-outline text-lg py-3">Content Creation</span>
+    </div>
+  </HorizontalCard>
+
+  <div class="divider my-4"></div>
 </BaseLayout>
