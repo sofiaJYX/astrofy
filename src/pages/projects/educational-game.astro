@@ -1,5 +1,21 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import ProjectGallery from "../../components/ProjectGallery.astro";
+
+const projectImages = [
+  {
+    src: "/projects/educational-game-preview-1.png",
+    alt: "Educational game main interface"
+  },
+  {
+    src: "/projects/educational-game-preview-2.png",
+    alt: "Game level design and mechanics"
+  },
+  {
+    src: "/projects/educational-game-preview-3.png",
+    alt: "Educational content integration"
+  }
+];
 ---
 
 <BaseLayout title="Educational Game Project" sideBarActiveItemID="projects">
@@ -14,7 +30,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
   </div>
 
   <div class="prose max-w-none">
-    <img src="/project1.webp" class="w-full rounded-lg shadow-xl mb-6" alt="Educational Game Project" />
+    <ProjectGallery images={projectImages} />
     
     <h2>Project Overview</h2>
     <p>

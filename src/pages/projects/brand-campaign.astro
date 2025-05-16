@@ -1,20 +1,32 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import ProjectGallery from "../../components/ProjectGallery.astro";
+
+const projectImages = [
+  {
+    src: "/projects/brand-campaign-1.jpg",
+    alt: "Brand campaign strategy overview"
+  },
+  {
+    src: "/projects/brand-campaign-2.jpg",
+    alt: "Campaign results and metrics"
+  }
+];
 ---
 
 <BaseLayout title="Brand Repositioning Campaign" sideBarActiveItemID="projects">
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">🎥 Brand Repositioning Campaign</div>
+    <div class="text-3xl w-full font-bold">🎯 Brand Repositioning Campaign</div>
     <div class="py-2">
       <span class="badge badge-primary mr-2">Marketing</span>
       <span class="badge badge-outline">Brand Strategy</span>
-      <span class="badge badge-outline">Stakeholder Management</span>
+      <span class="badge badge-outline">Analytics</span>
       <span class="badge badge-outline">Content Creation</span>
     </div>
   </div>
 
   <div class="prose max-w-none">
-    <img src="/project3.webp" class="w-full rounded-lg shadow-xl mb-6" alt="Brand Repositioning Campaign" />
+    <ProjectGallery images={projectImages} />
     
     <h2>Project Overview</h2>
     <p>

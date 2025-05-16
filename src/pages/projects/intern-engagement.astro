@@ -1,5 +1,29 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import ProjectGallery from "../../components/ProjectGallery.astro";
+
+const projectImages = [
+  {
+    src: "/projects/intern-engagement-1.png",
+    alt: "Team building and collaboration activities"
+  },
+  {
+    src: "/projects/intern-engagement-2.png",
+    alt: "Community engagement initiatives"
+  },
+  {
+    src: "/projects/intern-engagement-3.jpeg",
+    alt: "Team engagement activity"
+  },
+  {
+    src: "/projects/intern-engagement-4.jpeg",
+    alt: "Fundraising event"
+  },
+  {
+    src: "/projects/intern-engagement-5.png",
+    alt: "Project outcomes and metrics"
+  }
+];
 ---
 
 <BaseLayout title="Intern Engagement Leadership" sideBarActiveItemID="projects">
@@ -14,7 +38,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
   </div>
 
   <div class="prose max-w-none">
-    <img src="/project2.webp" class="w-full rounded-lg shadow-xl mb-6" alt="Intern Engagement at Emera" />
+    <ProjectGallery images={projectImages} />
     
     <h2>Project Overview</h2>
     <p>
